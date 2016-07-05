@@ -2,105 +2,102 @@
 *******
 v 1.8
 *******
-- Ajout d'une zone permettant d'afficher du texte complémentaire sur la page de détail d'une référence
+- Ajout d'une zone permettant d'afficher du texte complÃ©mentaire sur la page de dÃ©tail d'une rÃ©fÃ©rence
 - Dans l'administration, ajout d'un lien permettant d'aller directement voir les blocs du module
-- Dans les blocs (références récentes et références au hasard), possibilité de choisir les catégories à afficher
-- Ajout de 2 préférences pour choisir la zone de tri par défaut dans la liste des références dans l'admin
-- Dans la liste des références, dans l'admin, ajout de la colonne "poids"
-- Modification du module pour qu'il puisse être utilisée par d'autres modules 
+- Dans les blocs (rÃ©fÃ©rences rÃ©centes et rÃ©fÃ©rences au hasard), possibilitÃ© de choisir les catÃ©gories Ã  afficher
+- Ajout de 2 prÃ©fÃ©rences pour choisir la zone de tri par dÃ©faut dans la liste des rÃ©fÃ©rences dans l'admin
+- Dans la liste des rÃ©fÃ©rences, dans l'admin, ajout de la colonne "poids"
+- Modification du module pour qu'il puisse Ãªtre utilisÃ©e par d'autres modules
 
 Notes :
-- Le module doit être mis à jour et il faut régler les préférences du module
-
+- Le module doit Ãªtre mis Ã  jour et il faut rÃ©gler les prÃ©fÃ©rences du module
 
 *******
 v 1.72
 *******
-- Mise à jour de la librairie utilisée pour redimensionner les images
-
+- Mise Ã  jour de la librairie utilisÃ©e pour redimensionner les images
 
 *******
 v 1.71
 *******
-- Correction d'un bug dans la visualisation des catégories (plus aucune catégorie visible)
+- Correction d'un bug dans la visualisation des catÃ©gories (plus aucune catÃ©gorie visible)
 - Correction d'un bug lors de la maintenance des tables
-
 
 *******
 v 1.7
 *******
-- Le module nécessite Xoops >= 2.3.3
-- Ajout d'une page qui liste les catégories (category.php => references_category.html)
-- Ajout d'une page qui affiche le contenu d'une référence (reference.php => references_reference.html)
-- Modifications du template references_index.html (ajout d'une liste déroulante des catégories)
-- Modification de la recherche pour que le lien pointe vers la page d'une référence
+- Le module nÃ©cessite Xoops >= 2.3.3
+- Ajout d'une page qui liste les catÃ©gories (category.php => references_category.html)
+- Ajout d'une page qui affiche le contenu d'une rÃ©fÃ©rence (reference.php => references_reference.html)
+- Modifications du template references_index.html (ajout d'une liste dÃ©roulante des catÃ©gories)
+- Modification de la recherche pour que le lien pointe vers la page d'une rÃ©fÃ©rence
 - Modification du plugin sitemap
-- Ajout de tests pour vérifier la présence du module TAG
-- Ajout d'une notification sur la création d'une catégorie
-- Dans l'administration des catégories, le titre de chaque catégorie est cliquable
-- Dans les pages côté utilisateur, ajout de liens vers l'administration
-- Côté utilisateur, les catégories de la page d'index sont devenues cliquables
-- Ajout d'une zone description à chaque catégorie
+- Ajout de tests pour vÃ©rifier la prÃ©sence du module TAG
+- Ajout d'une notification sur la crÃ©ation d'une catÃ©gorie
+- Dans l'administration des catÃ©gories, le titre de chaque catÃ©gorie est cliquable
+- Dans les pages cÃ´tÃ© utilisateur, ajout de liens vers l'administration
+- CÃ´tÃ© utilisateur, les catÃ©gories de la page d'index sont devenues cliquables
+- Ajout d'une zone description Ã  chaque catÃ©gorie
 - Dans l'administration, modification des zones de filtres
-	Dans le config.php, ajout de : define("REFERENCES_EXACT_SEARCH", true);
-- Ajout d'un système de plugins
-- Ajout de permissions de lecture sur les catégories
+Dans le config.php, ajout de : define("REFERENCES_EXACT_SEARCH", true);
+- Ajout d'un systÃ¨me de plugins
+- Ajout de permissions de lecture sur les catÃ©gories
 
 Notes :
-	- Le module doit être mis à jour dans le gestionnaire de modules de Xoops et il faut aller au moins une fois dans
-	l'administration du module
-	- Il faut mettre à jour le plugin pour sitemap (recopie) et RSSFit
-	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-	x Vous devez mettre à jour les permissions de visualisation de chaque catégorie x
-	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- Le module doit Ãªtre mis Ã  jour dans le gestionnaire de modules de Xoops et il faut aller au moins une fois dans
+l'administration du module
+- Il faut mettre Ã  jour le plugin pour sitemap (recopie) et RSSFit
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+x Vous devez mettre Ã  jour les permissions de visualisation de chaque catÃ©gorie x
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 *******
 v 1.6
 *******
-- Dans le menu Xoops, le module n'affiche plus un lien vers les flux RSS s'ils sont désactivés dans les préférences du module
-- Amélioration de la compatibilité avec Xoops 2.4
+- Dans le menu Xoops, le module n'affiche plus un lien vers les flux RSS s'ils sont dÃ©sactivÃ©s dans les prÃ©fÃ©rences du module
+- AmÃ©lioration de la compatibilitÃ© avec Xoops 2.4
 
 *******
 v 1.5
 *******
-- Dans les références, ajout d'une notion de poids
-- Ajout de 2 options permettant de choisir sur quel critère trier les articles (date ou poids) et le sens de tri (ascendant ou descendant)
+- Dans les rÃ©fÃ©rences, ajout d'une notion de poids
+- Ajout de 2 options permettant de choisir sur quel critÃ¨re trier les articles (date ou poids) et le sens de tri (ascendant ou descendant)
 
 Note :
-	Le module doit être mis à jour dans le gestionnaire de modules de Xoops et il faut aller au moins une fois
-	dans les préférences du module
+Le module doit Ãªtre mis Ã  jour dans le gestionnaire de modules de Xoops et il faut aller au moins une fois
+dans les prÃ©fÃ©rences du module
 
 *******
 v 1.4
 *******
-- Ajout de index.html là où il manquait
-- La zone "Date manuelle" n'est plus obligatoire (dans l'admin lors de la création d'une référence)
-- Correction de bugs dans les blocs de référence aléatoire et de dernières références
-- Dans le formulaire de création d'une référence, ajout du numéro de l'image
-- Correction d'un bug sur la page d'index dans le cas où plusieurs catégories avaient le même poids
-- Ajout de la possibilité de filtrer les références dans l'administration du module
+- Ajout de index.html lÃ  oÃ¹ il manquait
+- La zone "Date manuelle" n'est plus obligatoire (dans l'admin lors de la crÃ©ation d'une rÃ©fÃ©rence)
+- Correction de bugs dans les blocs de rÃ©fÃ©rence alÃ©atoire et de derniÃ¨res rÃ©fÃ©rences
+- Dans le formulaire de crÃ©ation d'une rÃ©fÃ©rence, ajout du numÃ©ro de l'image
+- Correction d'un bug sur la page d'index dans le cas oÃ¹ plusieurs catÃ©gories avaient le mÃªme poids
+- Ajout de la possibilitÃ© de filtrer les rÃ©fÃ©rences dans l'administration du module
 Note :
-	Le module doit être mis à jour dans le gestionnaire de modules de Xoops
+Le module doit Ãªtre mis Ã  jour dans le gestionnaire de modules de Xoops
 
 *******
 v 1.3
 *******
-- Dans les préférences, ajout de 2 options pour redimensionner l'image principale de chaque référence
+- Dans les prÃ©fÃ©rences, ajout de 2 options pour redimensionner l'image principale de chaque rÃ©fÃ©rence
 - changelog.txt est devenu changelog.php
-- Le module doit être mis à jour dans le gestionnaire de modules de Xoops
+- Le module doit Ãªtre mis Ã  jour dans le gestionnaire de modules de Xoops
 
 *******
 v 1.2
 *******
-- Les blocs sont maintenant en mesure d'afficher la référence cliquée
-- Le module, sur sa page d'accueil ouvre maintenant, par défaut, la première référence
-- Dans config.php, ajout d'une option, REFERENCES_AUTO_FILL_MANUAL_DATE, qui permet de remplir automatiquement la date manuelle lorsqu'on crée une référence (avec la date du jour)
+- Les blocs sont maintenant en mesure d'afficher la rÃ©fÃ©rence cliquÃ©e
+- Le module, sur sa page d'accueil ouvre maintenant, par dÃ©faut, la premiÃ¨re rÃ©fÃ©rence
+- Dans config.php, ajout d'une option, REFERENCES_AUTO_FILL_MANUAL_DATE, qui permet de remplir automatiquement la date manuelle lorsqu'on crÃ©e une rÃ©fÃ©rence (avec la date du jour)
 - Dans l'administration il est maintenant possible de passer un article en ligne ou hors ligne en cliquant directement sur l'ampoule
 
 *******
 v 1.1
 *******
-- Correction d'un bug dans l'administration lors de la suppression d'une référence
+- Correction d'un bug dans l'administration lors de la suppression d'une rÃ©fÃ©rence
 
 *******
 v 1.0

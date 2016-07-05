@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * references - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -11,27 +11,72 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright       Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @copyright       HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         references
- * @author 			Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @author          HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  *
- * Version : $Id:
  * ****************************************************************************
  */
 
-$adminmenu[0]['title'] = _MI_REFERENCES_ADMENU0;
-$adminmenu[0]['link'] = "admin/index.php";
+defined('XOOPS_ROOT_PATH') || exit('XOOPS root path not defined');
 
-$adminmenu[1]['title'] = _MI_REFERENCES_ADMENU2;
-$adminmenu[1]['link'] = "admin/index.php?op=categories";
+//$path = dirname(dirname(dirname(__DIR__)));
+//include_once $path . '/mainfile.php';
 
-$adminmenu[2]['title'] = _MI_REFERENCES_ADMENU1;
-$adminmenu[2]['link'] = "admin/index.php?op=texts";
+$moduleDirName = basename(dirname(__DIR__));
 
-$adminmenu[3]['title'] = _MI_REFERENCES_ADMENU3;
-$adminmenu[3]['link'] = "admin/index.php?op=perms";
+$moduleHandler = xoops_getHandler('module');
+$module        = $moduleHandler->getByDirname($moduleDirName);
+$pathIcon32    = '../../' . $module->getInfo('sysicons32');
+$pathModIcon32 = './' . $module->getInfo('modicons32');
+xoops_loadLanguage('modinfo', $module->dirname());
 
-$adminmenu[4]['title'] = "Instant Zero";
-$adminmenu[4]['link'] = "admin/index.php?op=instant-zero";
-?>
+$xoopsModuleAdminPath = XOOPS_ROOT_PATH . '/' . $module->getInfo('dirmoduleadmin');
+if (!file_exists($fileinc = $xoopsModuleAdminPath . '/language/' . $GLOBALS['xoopsConfig']['language'] . '/' . 'main.php')) {
+    $fileinc = $xoopsModuleAdminPath . '/language/english/main.php';
+}
+include_once $fileinc;
+
+$adminmenu[] = array(
+    'title' => _AM_MODULEADMIN_HOME,
+    'link'  => 'admin/index.php',
+    'icon'  => $pathIcon32 . '/home.png'
+);
+
+$adminmenu[] = array(
+    'title' => _MI_REFERENCES_ADMENU0,
+    'link'  => 'admin/main.php',
+    'icon'  => $pathIcon32 . '/index.png'
+);
+
+$adminmenu[] = array(
+    'title' => _MI_REFERENCES_ADMENU2,
+    'link'  => 'admin/main.php?op=categories',
+    'icon'  => $pathIcon32 . '/category.png'
+);
+
+$adminmenu[] = array(
+    'title' => _MI_REFERENCES_ADMENU1,
+    'link'  => 'admin/main.php?op=texts',
+    'icon'  => $pathIcon32 . '/manage.png'
+);
+
+$adminmenu[] = array(
+    'title' => _MI_REFERENCES_ADMENU3,
+    'link'  => 'admin/main.php?op=perms',
+    'icon'  => $pathIcon32 . '/permissions.png'
+);
+
+//$adminmenu[] = array(
+//    'title' => 'Instant Zero',
+//    'link'  => 'admin/main.php?op=instant-zero',
+//    'icon'  => $pathIcon32.'/about.png'
+//);
+
+$adminmenu[] = array(
+    'title' => _AM_MODULEADMIN_ABOUT,
+    'link'  => 'admin/about.php',
+    'icon'  => $pathIcon32 . '/about.png'
+);
+

@@ -1,21 +1,21 @@
 Bonjour {X_UNAME},
 
-Une nouvelle référence "{ARTICLE_TITLE}" a été publiée sur  {X_SITENAME}.
+Une nouvelle rÃ©fÃ©rence "{ARTICLE_TITLE}" a Ã©tÃ© publiÃ©e sur  {X_SITENAME}.
 
 Voici le sommaire de l'article :
 {ARTICLE_SHORT_TEXT}
 
-Vous pouvez voir cet article à cette adresse :
+Vous pouvez voir cet article Ã  cette adresse :
 {REFERENCES_URL}
 
 -----------
 
-Vous recevez ce message car vous avez demandé à être notifié lorsqu'une nouvelle référence est ajoutée sur notre site.
+Vous recevez ce message car vous avez demandÃ© Ã  Ãªtre notifiÃ© lorsqu'une nouvelle rÃ©fÃ©rence est ajoutÃ©e sur notre site.
 
-Si c'est une erreur ou si vous ne souhaitez plus recevoir d'autres notifications, veuillez mettre à jour vos alertes en visitant le lien ci-dessous :
+Si c'est une erreur ou si vous ne souhaitez plus recevoir d'autres notifications, veuillez mettre Ã  jour vos alertes en visitant le lien ci-dessous :
 {X_UNSUBSCRIBE_URL}
 
-Merci de ne pas répondre à cet email.
+Merci de ne pas rÃ©pondre Ã  cet email.
 
 -----------
 

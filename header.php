@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * references - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -11,18 +11,16 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright       Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @copyright       HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         references
- * @author 			Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @author          HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  *
- * Version : $Id:
  * ****************************************************************************
  */
-if(file_exists('../../mainfile.php')) {
-	require '../../mainfile.php';
-} elseif(file_exists('../../../mainfile.php')) {
-	require '../../../mainfile.php';
+if (file_exists('../../mainfile.php')) {
+    require __DIR__ . '/../../mainfile.php';
+} elseif (file_exists('../../../mainfile.php')) {
+    require __DIR__ . '/../../../mainfile.php';
 }
-require_once XOOPS_ROOT_PATH.'/modules/references/include/common.php';
-?>
+require_once XOOPS_ROOT_PATH . '/modules/references/include/common.php';
