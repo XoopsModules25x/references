@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * references - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -11,12 +11,11 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright       Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @copyright       HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package         references
- * @author 			Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @author          HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  *
- * Version : $Id:
  * ****************************************************************************
  */
 
@@ -24,15 +23,14 @@
  * Every filter plugin must extend this class
  */
 if (!defined('XOOPS_ROOT_PATH')) {
-	die("XOOPS root path not defined");
+    die('XOOPS root path not defined');
 }
 
 abstract class references_filter
 {
-	/**
-	 * Retourne la liste des évènements traités par le plugin
-	 * @return array
-	 */
-	abstract static function registerEvents();
+    /**
+     * Retourne la liste des Ã©vÃ¨nements traitÃ©s par le plugin
+     * @return array
+     */
+    abstract public function registerEvents();
 }
-?>

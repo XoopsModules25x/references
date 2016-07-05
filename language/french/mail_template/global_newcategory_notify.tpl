@@ -1,16 +1,16 @@
 Bonjour {X_UNAME},
 
-Une nouvelle catégorie "{CATEGORY_NAME}" a été publiée sur  {X_SITENAME}.
-Vous pouvez la voir à cette adresse : {CATEGORY_URL}
+Une nouvelle catÃ©gorie "{CATEGORY_NAME}" a Ã©tÃ© publiÃ©e sur  {X_SITENAME}.
+Vous pouvez la voir Ã  cette adresse : {CATEGORY_URL}
 
 -----------
 
-Vous recevez ce message car vous avez demandé à être notifié lorsqu'une nouvelle catégorie est ajoutée sur notre site.
+Vous recevez ce message car vous avez demandÃ© Ã  Ãªtre notifiÃ© lorsqu'une nouvelle catÃ©gorie est ajoutÃ©e sur notre site.
 
-Si c'est une erreur ou si vous ne souhaitez plus recevoir d'autres notifications, veuillez mettre à jour vos alertes en visitant le lien ci-dessous :
+Si c'est une erreur ou si vous ne souhaitez plus recevoir d'autres notifications, veuillez mettre Ã  jour vos alertes en visitant le lien ci-dessous :
 {X_UNSUBSCRIBE_URL}
 
-Merci de ne pas répondre à cet email.
+Merci de ne pas rÃ©pondre Ã  cet email.
 
 -----------
 

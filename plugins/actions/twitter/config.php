@@ -2,7 +2,7 @@
 /**
  * ****************************************************************************
  * references - MODULE FOR XOOPS
- * Copyright (c) Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * Copyright (c) HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -11,37 +11,36 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @copyright       Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
- * @license         http://www.fsf.org/copyleft/gpl.html GNU public license
- * @package         references
- * @author 			Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @copyright         HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
+ * @license           http://www.fsf.org/copyleft/gpl.html GNU public license
+ * @package           references
+ * @author            HervÃ© Thouzard of Instant Zero (http://www.instant-zero.com)
  *
  * Version : $Id:
  * ****************************************************************************
  */
 
 /**
- * Paramètres Twitter
+ * ParamÃ¨tres Twitter
  */
 
 // Login Twitter
-define("REFERENCES_TWITTER_USERNAME", "");
+define('REFERENCES_TWITTER_USERNAME', '');
 // Mot de passe Twitter
-define("REFERENCES_TWITTER_PASSWORD", "");
+define('REFERENCES_TWITTER_PASSWORD', '');
 
-// Paramétrage à utiliser pour créer le texte qui indique la création d'un nouveau produit. [itemname] = nom de l'élément, [url] = url créée avec bit.ly
-define("REFERENCES_TWITTER_NEW_REFERENCE_INTRO", "Nouvelle référence [itemname] [url]");
-// Paramétrage à utiliser pour créer le texte qui indique la création d'une nouvelle catégori [itemname] = nom de l'élément, [url] = url créée avec bit.ly
-// Mettre à blanc "", pour ne pas lancer de notification
-define("REFERENCES_TWITTER_NEW_CATEGORY_INTRO", "Nouvelle catégorie [itemname] [url]");
+// ParamÃ©trage Ã  utiliser pour crÃ©er le texte qui indique la crÃ©ation d'un nouveau produit. [itemname] = nom de l'Ã©lÃ©ment, [url] = url crÃ©Ã©e avec bit.ly
+define('REFERENCES_TWITTER_NEW_REFERENCE_INTRO', 'Nouvelle rÃ©fÃ©rence [itemname] [url]');
+// ParamÃ©trage Ã  utiliser pour crÃ©er le texte qui indique la crÃ©ation d'une nouvelle catÃ©gori [itemname] = nom de l'Ã©lÃ©ment, [url] = url crÃ©Ã©e avec bit.ly
+// Mettre Ã  blanc "", pour ne pas lancer de notification
+define('REFERENCES_TWITTER_NEW_CATEGORY_INTRO', 'Nouvelle catÃ©gorie [itemname] [url]');
 
-
-// Longueur que le texte ne doit pas dépasser
-define("REFERENCES_TWITTER_TWIT_MAX_LENGTH", 140);
+// Longueur que le texte ne doit pas dÃ©passer
+define('REFERENCES_TWITTER_TWIT_MAX_LENGTH', 140);
 
 /**
- * Paramètres bit.ly
+ * ParamÃ¨tres bit.ly
  */
-define("REFERENCES_BITLY_LOGIN", "");
-define("REFERENCES_BITLY_API_KEY", "");
-?>
+define('REFERENCES_BITLY_LOGIN', '');
+define('REFERENCES_BITLY_API_KEY', '');
+
