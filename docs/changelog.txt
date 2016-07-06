@@ -11,7 +11,7 @@
 - replaced deprecated functions e.g. eregi (mamba)
 - removed unnecessary double quotes and parenthesis (mamba)
 - improved type comparison (mamba)
-- standardization with <br> (mamba)
+- standardization with \'< br >\' (mamba)
 - standardization with addNavigation(basename(__FILE__)) (mamba)
 - updated function visibility (mamba)
 - reference mismatch (mamba)

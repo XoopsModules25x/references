@@ -16,7 +16,6 @@
  * @package           references
  * @author            Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
  *
- * Version : $Id:
  * ****************************************************************************
  */
 
@@ -94,9 +93,9 @@ class referencesTwitterAction extends references_action
             $sentText  = str_replace($searches, $replaces, $mask);
         }
         if (trim($sentText) != '') {
-            //			$twitter = new Twitter(REFERENCES_TWITTER_USERNAME, REFERENCES_TWITTER_PASSWORD);
-            //			$twitter->setUserAgent('references');
-            //			$twitter->updateStatus($sentText);
+            //          $twitter = new Twitter(REFERENCES_TWITTER_USERNAME, REFERENCES_TWITTER_PASSWORD);
+            //          $twitter->setUserAgent('references');
+            //          $twitter->updateStatus($sentText);
             $tweet = new Twitter(REFERENCES_TWITTER_USERNAME, REFERENCES_TWITTER_PASSWORD);
             $tweet->update($sentText);
         }

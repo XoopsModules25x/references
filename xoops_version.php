@@ -19,9 +19,7 @@
  * ****************************************************************************
  */
 
-if (!defined('XOOPS_ROOT_PATH')) {
-    die('XOOPS root path not defined');
-}
+defined('XOOPS_ROOT_PATH') || exit('XOOPS root path not defined');
 
 $modversion['name']           = _MI_REFERENCES_NAME;
 $modversion['version']        = 2.0;
@@ -32,7 +30,7 @@ $modversion['help']           = 'page=help';
 $modversion['license']        = 'GNU GPL 2.0 or later';
 $modversion['license_url']    = 'www.gnu.org/licenses/gpl-2.0.html';
 $modversion['official']       = 0;
-$modversion['image']          = 'assets/images/references.png';
+$modversion['image']          = 'assets/images/logoModule.png';
 $modversion['dirname']        = basename(__DIR__);
 $modversion['dirmoduleadmin'] = 'Frameworks/moduleclasses/moduleadmin';
 $modversion['sysicons16']     = 'Frameworks/moduleclasses/icons/16';
@@ -46,7 +44,7 @@ $modversion['module_website_url']  = 'www.xoops.org';
 $modversion['module_website_name'] = 'XOOPS';
 $modversion['min_php']             = '5.5';
 $modversion['min_xoops']           = '2.5.8';
-$modversion['min_admin']           = '1.1';
+$modversion['min_admin']           = '1.2';
 $modversion['min_db']              = array(
     'mysql'  => '5.0.7',
     'mysqli' => '5.0.7'
