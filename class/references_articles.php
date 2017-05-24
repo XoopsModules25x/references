@@ -18,9 +18,7 @@
  *
  * ****************************************************************************
  */
-if (!defined('XOOPS_ROOT_PATH')) {
-    die('XOOPS root path not defined');
-}
+defined('XOOPS_ROOT_PATH') || exit('XOOPS root path not defined');
 
 require_once XOOPS_ROOT_PATH . '/kernel/object.php';
 if (!class_exists('references_XoopsPersistableObjectHandler')) {

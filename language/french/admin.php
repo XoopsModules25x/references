@@ -16,7 +16,6 @@
  * @package           references
  * @author            Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
  *
- * Version : $Id:
  * ****************************************************************************
  */
 define('_AM_REFERENCES_GO_TO_MODULE', 'Aller au module');

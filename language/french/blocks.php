@@ -16,7 +16,6 @@
  * @package           references
  * @author            Hervé Thouzard of Instant Zero (http://www.instant-zero.com)
  *
- * Version : $Id:
  * ****************************************************************************
  */
 define('_MB_REFERENCES_ITEMS_COUNT', "Nombre d'éléments à afficher");

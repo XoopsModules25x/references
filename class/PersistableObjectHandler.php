@@ -21,9 +21,7 @@
  * ****************************************************************************
  */
 
-if (!defined('XOOPS_ROOT_PATH')) {
-    die('XOOPS root path not defined');
-}
+defined('XOOPS_ROOT_PATH') || exit('XOOPS root path not defined');
 
 class references_Object extends XoopsObject
 {
@@ -170,7 +168,7 @@ class references_XoopsPersistableObjectHandler extends XoopsObjectHandler
             $criteria = new Criteria($this->keyName, (int)$id);
         }
         $criteria->setLimit(1);
-        $obj_array =& $this->getObjects($criteria, false, $as_object);
+        $obj_array = $this->getObjects($criteria, false, $as_object);
         if (count($obj_array) != 1) {
             $ret = null;
         } else {
@@ -393,7 +391,7 @@ class references_XoopsPersistableObjectHandler extends XoopsObjectHandler
             if (!is_null($additionnal)) {
                 $criteria->add($additionnal);
             }
-            $ret =& $this->getObjects($criteria, true);
+            $ret = $this->getObjects($criteria, true);
         }
 
         return $ret;
@@ -835,7 +833,7 @@ class references_XoopsPersistableObjectHandler extends XoopsObjectHandler
         $critere->setStart($start);
         $critere->setSort($sort);
         $critere->setOrder($order);
-        $items =& $this->getObjects($critere, $idAsKey);
+        $items = $this->getObjects($critere, $idAsKey);
 
         return $items;
     }
